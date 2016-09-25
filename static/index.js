@@ -5,6 +5,7 @@ var ScoreNow = 0;
 var Delay = 1000;
 var Firstcheck = false
 var IntervalSet
+var HighScore = 0;
 
 $(document).ready(function(){
     $("#button1").click(function(){
@@ -134,6 +135,12 @@ $(document).ready(function(){
 	var p1 = document.createElement('p');
 	p1.id = "demo3";
 	div0.appendChild(p1);
+	var p2 = document.createElement('p');
+	p2.id = "highscore";
+	div0.appendChild(p2);
+	var p3 = document.createElement('p');
+	p3.id = "timegone";
+	div0.appendChild(p3);
 	
 	var element = document.getElementById("button1"); /*finds button*/
 	element.parentNode.removeChild(element); /*removes button*/
@@ -430,6 +437,10 @@ function GameOver() {
 
     var p0 = document.getElementById("demo3");
     p0.parentNode.removeChild(p0);
+    var p1 = document.getElementById("highscore");
+    p1.parentNode.removeChild(p1);
+    var p2 = document.getElementById("timegone");
+    p2.parentNode.removeChild(p2);
     
     var head1 = document.createElement('h1');
     var p1 = document.createElement('p');
@@ -467,9 +478,16 @@ function Timer() {
     changed = CircleChanged;
     score = ScoreNow;
     wait = Delay;
+    highscore = HighScore
     document.getElementById("demo3").innerHTML = score;
+    document.getElementById("timegone").innerHTML = choice;
+    document.getElementById("highscore").innerHTML = highscore;
     MilliPass = MilliPass + 20;
 
+    if(score > highscore)
+    {
+	score = HighScore;
+    }
     
     if(MilliPass >= 30000)
     {

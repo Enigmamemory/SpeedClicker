@@ -472,3 +472,15 @@ p.ggscore{
     position: absolute;
     top: 55%;
 }
+
+#highscore{
+    position: absolute;
+    left:5%;
+    top: 95%;
+}
+
+#timegone{
+    position: absolute;
+    left: 5%;
+    top: 5%;
+}
