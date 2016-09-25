@@ -129,9 +129,7 @@ function GameOver() {
     p2.appendChild(text3)
 
     div0.appendChild(head1);
-    div0.appendChild(breaking);
     div0.appendChild(p1);
-    div0.appendChild(breaking);
     div0.appendChild(p2);
 
     clearInterval(IntervalSet);

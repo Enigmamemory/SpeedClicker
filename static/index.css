@@ -160,15 +160,15 @@ img.bg {
 
 h1.gg{
     position: absolute;
-    text-align: center;
+    top: 25%
 }
 
 p.gg{
     position: absolute;
-    text-align: center;
+    top: 45%
 }
 
 p.ggscore{
     position: absolute;
-    text-align: center;
+    top: 55%
 }
