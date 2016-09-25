@@ -616,12 +616,13 @@ function GameOver() {
 
     p2.className = "ggscore";
     var text3 = document.createTextNode(scoretext);
-    p2.appendChild(text3)
+    p2.appendChild(text3);
 
     var button2 = document.createElement("button");
     button2.id = "button2";
     button2.className = "myButton";
-    document.getElementById("button2").innerHTML = "Play Again";
+    var text4 = document.createTextNode("Play Again?");
+    button2.appendChild(text4);
     
 
     div0.appendChild(head1);
