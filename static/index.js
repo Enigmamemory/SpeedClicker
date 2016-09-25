@@ -124,7 +124,7 @@ function GameOver() {
     scoretext = score.toString();
 
     p2.id = "ggscore";
-    var text3 = document.creatTextNode(scoretext);
+    var text3 = document.createTextNode(scoretext);
     p2.appendChild(text3)
 
     div0.appendChild(head1);
