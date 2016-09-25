@@ -90,6 +90,9 @@ function Clickbr(){
 }
 
 function GameOver() {
+    
+    score = Score;
+    
     clearInterval(IntervalSet);
     var div1 = document.getElementById("circle_lv1_tl");
     var div2 = document.getElementById("circle_lv1_tr");
@@ -115,10 +118,10 @@ function GameOver() {
     var text2 = document.createTextNode("Your Score is");
     head1.appendChild(text2);
 
-    score = Score;
+    scoretext = score.toString();
     
     p2.id = "ggscore";
-    document.getElementById("ggscore").innerHTML = score;
+    document.getElementById("ggscore").innerHTML = scoretext;
 
     document.body.appendChild(head1);
     document.body.appendChild(p1);
