@@ -123,14 +123,13 @@ function GameOver() {
 
     scoretext = score.toString();
 
+    p2.id = "ggscore";
+    var text3 = document.creatTextNode(scoretext);
+    p2.appendChild(text3)
+
     div0.appendChild(head1);
     div0.appendChild(p1);
-
-    p2.id = "ggscore";
     div0.appendChild(p2);
-    
-
-    document.getElementById("ggscore").innerHTML = score;
 
     clearInterval(IntervalSet);
     
