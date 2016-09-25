@@ -9,14 +9,17 @@ $(document).ready(function(){
 
 	var div2 = document.createElement('div'); /*create div*/
 	div2.id = "circle_lv1_tr"; /*defines div's class*/
+	div2.color = "#FFFFFF"
 	document.body.appendChild(div2); /*adds div*/
 
 	var div3 = document.createElement('div'); /*create div*/
 	div3.id = "circle_lv1_bl"; /*defines div's class*/
+	div3.color = "#FFFFFF"
 	document.body.appendChild(div3); /*adds div*/
 
 	var div4 = document.createElement('div'); /*create div*/
 	div4.id = "circle_lv1_br"; /*defines div's class*/
+	div4.color = "#FFFFFF"
 	document.body.appendChild(div4); /*adds div*/
 	
 	var element = document.getElementById("button1"); /*finds button*/
@@ -34,28 +37,28 @@ function FirstRandom() {
     if (choice == 0)
     {
 	var check = document.getElementById("circle_lv1_tl");
-	check.style.background-color = "#0000FF";
+	check.setAttribute("color","#0000FF");
 	CircleChanged = true;
 	alert("0");
     }
     else if (choice == 1)
     {
 	var check = document.getElementById("circle_lv1_tr");
-	check.setAttribute("background","#0000FF");
+	check.setAttribute("color","#0000FF");
 	CircleChanged = true;
 	alert("1");
     }
     else if (choice == 2)
     {
 	var check = document.getElementById("circle_lv1_bl");
-	check.setAttribute("background","#0000FF");
+	check.setAttribute("color","#0000FF");
 	CircleChanged = true;
 	alert("2");
     }
     else if (choice == 3)
     {
 	var check = document.getElementById("circle_lv1_br");
-	check.setAttribute("background","#0000FF");
+	check.setAttribute("color","#0000FF");
 	CircleChanged = true;
 	aler("3");
     }
