@@ -158,12 +158,17 @@ img.bg {
     top: 15%;
 }
 
-#gg{
+h1.gg{
     position: absolute;
     text-align: center;
 }
 
-#ggscore{
+p.gg{
+    position: absolute;
+    text-align: center;
+}
+
+p.ggscore{
     position: absolute;
     text-align: center;
 }

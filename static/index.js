@@ -112,19 +112,19 @@ function GameOver() {
     var head1 = document.createElement('h1');
     var p1 = document.createElement('p');
     var p2 = document.createElement('p');
-    var breaking = document.createElement('br');
+    var breaking = document.createElement("br");
 
-    head1.id = "gg";
+    head1.className = "gg";
     var text1 = document.createTextNode("Game Over");
     head1.appendChild(text1);
     
-    p1.id = "gg";
+    p1.className = "gg";
     var text2 = document.createTextNode("Your Score is");
     head1.appendChild(text2);
 
     scoretext = score.toString();
 
-    p2.id = "ggscore";
+    p2.className = "ggscore";
     var text3 = document.createTextNode(scoretext);
     p2.appendChild(text3)
 
