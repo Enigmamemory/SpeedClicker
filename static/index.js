@@ -112,6 +112,7 @@ function GameOver() {
     var head1 = document.createElement('h1');
     var p1 = document.createElement('p');
     var p2 = document.createElement('p');
+    var breaking = document.createElement('br');
 
     head1.id = "gg";
     var text1 = document.createTextNode("Game Over");
@@ -128,7 +129,9 @@ function GameOver() {
     p2.appendChild(text3)
 
     div0.appendChild(head1);
+    div0.appendChild(breaking);
     div0.appendChild(p1);
+    div0.appendChild(breaking);
     div0.appendChild(p2);
 
     clearInterval(IntervalSet);
