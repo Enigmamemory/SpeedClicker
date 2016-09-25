@@ -37,7 +37,7 @@ function FirstRandom() {
     if (choice == 0)
     {
 	var check = document.getElementById("circle_lv1_tl");
-	check.setAttribute("color","#0000FF");
+	check.style.backgroundColor = "#0000FF";
 	CircleChanged = true;
 	alert("0");
     }
