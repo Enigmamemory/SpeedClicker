@@ -2,6 +2,7 @@ var CircleChanged = false; /*tracks if circle color has been changed*/
 var TimePass = 0;
 var MilliPass = 0;
 var Score = 0;
+var First = false
 
 $(document).ready(function(){
     $("#button1").click(function(){
@@ -41,7 +42,7 @@ function Timer() {
 	TimePass++;
 
     }
-    if(MilliPass >= 1000)
+    if((MilliPass >= 1000) && (First == false))
     {
 	First();
     }
