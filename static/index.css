@@ -44,6 +44,7 @@ img.bg {
     height: 20%;
     top: 35%;
     left: 35%;
+    background: #FFFFFFF;
     
 }
 
@@ -55,6 +56,7 @@ img.bg {
     height: 20%;
     top: 35%;
     left: 65%;
+    background: #FFFFFFF;
 
 }
 
@@ -66,6 +68,7 @@ img.bg {
     height: 20%;
     top: 65%;
     left: 35%;
+    background: #FFFFFFF;
 
 }
 
@@ -77,5 +80,6 @@ img.bg {
     height: 20%;
     top: 65%;
     left: 65%;
+    background: #FFFFFFF;
     
 }
