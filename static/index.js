@@ -29,7 +29,7 @@ function GameOver() {
 
 function FirstRandom() {
     var choice = Math.Floor(Math.Random()*4); /*creates int between 0-3, inclusive */
-    alert(choice);
+    document.getElementById("demo").innerHTML = choice;
     if (choice == 0)
     {
 	var check = document.getElementById("circle_lv1_tl");
