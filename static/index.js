@@ -2,6 +2,7 @@ var CircleChanged = false; /*tracks if circle color has been changed*/
 var TimePass = 0;
 var MilliPass = 0;
 var Score = 0;
+var Delay = 1000;
 var Firstcheck = false
 
 $(document).ready(function(){
@@ -43,6 +44,7 @@ function Clicktl(){
 	check.style.backgroundColor = "#FFFFFF";
 	CircleChanged = false;
 	Score++;
+	Delay = MilliPass;
     }
 }
 
@@ -54,6 +56,7 @@ function Clicktr(){
 	check.style.backgroundColor = "#FFFFFF";
 	CircleChanged = false;
 	Score++;
+	Delay = MilliPass;
     }
 }
 
@@ -65,6 +68,7 @@ function Clickbl(){
 	check.style.backgroundColor = "#FFFFFF";
 	CircleChanged = false;
 	Score++;
+	Delay = MilliPass;
     }
 }
 
@@ -76,6 +80,7 @@ function Clickbr(){
 	check.style.backgroundColor = "#FFFFFF";
 	CircleChanged = false;
 	Score++;
+	Delay = MilliPass;
     }
 }
 
@@ -99,6 +104,7 @@ function Timer() {
     choice = TimePass;
     changed = CircleChanged;
     score = Score
+    wait = Delay
     document.getElementById("demo").innerHTML = choice;
     document.getElementById("demo2").innerHTML = changed;
     document.getElementById("demo3").innerHTML = score;
@@ -106,7 +112,7 @@ function Timer() {
 
     if((MilliPass >= 1000) && (Firstcheck == true))
     {
-	if(CircleChanged == false)
+	if((CircleChanged == false) && (MilliPass >= wait + 100))
 	{
 	    First();
 	}
