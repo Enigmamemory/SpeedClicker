@@ -39,7 +39,7 @@ function Clicktl(){
     var check = document.getElementById("circle_lv1_tl");
     checkcolor = check.style.backgroundColor;
     document.getElementById("demo3").innerHTML = checkcolor;
-    if (checkcolor == "#0000FF")
+    if (checkcolor == #0000FF)
     {
 	alert("1");
 	check.style.backgroundColor = "#FFFFFF";
@@ -51,7 +51,7 @@ function Clicktr(){
     var check = document.getElementById("circle_lv1_tr");
     checkcolor = check.style.backgroundColor;
     document.getElementById("demo3").innerHTML = checkcolor;
-    if (checkcolor == "#0000FF")
+    if (checkcolor == #0000FF)
     {
 	alert("2");
 	check.style.backgroundColor = "#FFFFFF";
@@ -63,7 +63,7 @@ function Clickbl(){
     var check = document.getElementById("circle_lv1_bl");
     checkcolor = check.style.backgroundColor;
     document.getElementById("demo3").innerHTML = checkcolor;
-    if (checkcolor == "#0000FF")
+    if (checkcolor == #0000FF)
     {
 	alert("3");
 	check.style.backgroundColor = "#FFFFFF";
@@ -75,7 +75,7 @@ function Clickbr(){
     var check = document.getElementById("circle_lv1_br");
     checkcolor = check.style.backgroundColor;
     document.getElementById("demo3").innerHTML = checkcolor;
-    if (checkcolor == "#0000FF")
+    if (checkcolor == #0000FF)
     {
 	alert("4");
 	check.style.backgroundColor = "#FFFFFF";
