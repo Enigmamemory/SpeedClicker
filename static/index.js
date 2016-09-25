@@ -4,7 +4,7 @@ $(document).ready(function(){
     $("#button1").click(function(){
 	var div1 = document.createElement('div'); /*create div*/
 	div1.id = "circle_lv1_tl"; /*defines div's class*/
-	div1.background-color = "#FFFFFF";
+	div1.style.background-color = "#FFFFFF";
 	document.body.appendChild(div1); /*adds div*/
 
 	var div2 = document.createElement('div'); /*create div*/
