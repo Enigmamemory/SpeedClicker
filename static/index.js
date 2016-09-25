@@ -149,7 +149,7 @@ function Timer() {
     MilliPass = MilliPass + 20;
 
     
-    if(MilliPass >= 3000)
+    if(MilliPass >= 30000)
     {
 	GameOver();
     }
