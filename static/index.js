@@ -158,7 +158,7 @@ function Timer() {
 
     choice = TimePass;
     changed = CircleChanged;
-    score = Score;
+    score = ScoreNow;
     wait = Delay;
     document.getElementById("demo").innerHTML = choice;
     document.getElementById("demo2").innerHTML = changed;
