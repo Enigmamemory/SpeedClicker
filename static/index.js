@@ -36,48 +36,48 @@ $(document).ready(function(){
 });
 
 function Clicktl(){
-    alert("1");
     var check = document.getElementById("circle_lv1_tl");
     checkcolor = check.style.backgroundColor;
     document.getElementById("demo3").innerHTML = checkcolor;
     if (checkcolor == "#0000FF")
     {
+	alert("1");
 	check.style.backgroundColor = "#FFFFFF";
 	CircleChanged = false;
     }
 }
 
 function Clicktr(){
-    alert("2");
     var check = document.getElementById("circle_lv1_tr");
     checkcolor = check.style.backgroundColor;
     document.getElementById("demo3").innerHTML = checkcolor;
     if (checkcolor == "#0000FF")
     {
+	alert("2");
 	check.style.backgroundColor = "#FFFFFF";
 	CircleChanged = false;
     }
 }
 
 function Clickbl(){
-    alert("3");
     var check = document.getElementById("circle_lv1_bl");
     checkcolor = check.style.backgroundColor;
     document.getElementById("demo3").innerHTML = checkcolor;
     if (checkcolor == "#0000FF")
     {
+	alert("3");
 	check.style.backgroundColor = "#FFFFFF";
 	CircleChanged = false;
     }
 }
 
 function Clickbr(){
-    alert("4");
     var check = document.getElementById("circle_lv1_br");
     checkcolor = check.style.backgroundColor;
     document.getElementById("demo3").innerHTML = checkcolor;
     if (checkcolor == "#0000FF")
     {
+	alert("4");
 	check.style.backgroundColor = "#FFFFFF";
 	CircleChanged = false;
     }
