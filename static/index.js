@@ -85,4 +85,5 @@ function First() {
     {
 	alert("Failed to produce int between 0-3"); /*error message*/
     }
+    First = true;
 }
