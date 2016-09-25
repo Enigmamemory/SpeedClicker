@@ -117,7 +117,7 @@ function GameOver() {
 
     score = Score;
     
-    p2.id = "gg";
+    p2.id = "ggscore";
     document.getElementById("ggscore").innerHTML = score;
 
     document.body.appendChild(head1);
