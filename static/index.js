@@ -44,21 +44,21 @@ function FirstRandom() {
     else if (choice == 1)
     {
 	var check = document.getElementById("circle_lv1_tr");
-	check.setAttribute("color","#0000FF");
+	check.style.backgroundColor = "#0000FF";
 	CircleChanged = true;
 	alert("1");
     }
     else if (choice == 2)
     {
 	var check = document.getElementById("circle_lv1_bl");
-	check.setAttribute("color","#0000FF");
+	check.style.backgroundColor = "#0000FF";
 	CircleChanged = true;
 	alert("2");
     }
     else if (choice == 3)
     {
 	var check = document.getElementById("circle_lv1_br");
-	check.setAttribute("color","#0000FF");
+	check.style.backgroundColor = "#0000FF";
 	CircleChanged = true;
 	aler("3");
     }
