@@ -476,11 +476,16 @@ p.ggscore{
 #highscore{
     position: absolute;
     left:5%;
-    top: 95%;
+    top: 90%;
 }
 
 #timegone{
     position: absolute;
     left: 5%;
     top: 5%;
+}
+
+#button2{
+    position: absolute;
+    top: 85%;
 }

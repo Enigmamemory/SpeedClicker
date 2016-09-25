@@ -461,9 +461,14 @@ function GameOver() {
     var text3 = document.createTextNode(scoretext);
     p2.appendChild(text3)
 
+    var button2 = document.createElement("button");
+    button2.id = "button2";
+    button2.className = "myButton";
+
     div0.appendChild(head1);
     div0.appendChild(p1);
     div0.appendChild(p2);
+    div0.appendChild(button2);
 
     clearInterval(IntervalSet);
     
