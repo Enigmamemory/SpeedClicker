@@ -140,6 +140,16 @@ function Start() {
 }
 
 function Timer() {
+    choice = TimePass;
+    changed = CircleChanged;
+    score = ScoreNow;
+    wait = Delay;
+    document.getElementById("demo").innerHTML = choice;
+    document.getElementById("demo2").innerHTML = changed;
+    document.getElementById("demo3").innerHTML = score;
+    MilliPass = MilliPass + 20;
+
+    
     if(MilliPass >= 3000)
     {
 	GameOver();
@@ -155,15 +165,6 @@ function Timer() {
     {
 	First();
     }
-
-    choice = TimePass;
-    changed = CircleChanged;
-    score = ScoreNow;
-    wait = Delay;
-    document.getElementById("demo").innerHTML = choice;
-    document.getElementById("demo2").innerHTML = changed;
-    document.getElementById("demo3").innerHTML = score;
-    MilliPass = MilliPass + 20;
 
     if((MilliPass >= 1000) && (Firstcheck == true))
     {
