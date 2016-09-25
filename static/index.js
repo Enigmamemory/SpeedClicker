@@ -31,6 +31,10 @@ $(document).ready(function(){
 	div4.style.backgroundColor = "#FFFFFF";
 	div4.onclick = Clickbr;
 	document.body.appendChild(div4); /*adds div*/
+
+	var p1 = document.createElement('p');
+	p1.id = "demo3";
+	document.body.appendChild(p1);
 	
 	var element = document.getElementById("button1"); /*finds button*/
 	element.parentNode.removeChild(element); /*removes button*/
