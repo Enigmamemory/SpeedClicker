@@ -4,6 +4,7 @@ var MilliPass = 0;
 var Score = 0;
 var Delay = 1000;
 var Firstcheck = false
+var IntervalSet
 
 $(document).ready(function(){
     $("#button1").click(function(){
@@ -86,6 +87,10 @@ function Clickbr(){
 
 function GameOver() {
     alert("Game Over");
+}
+
+function Start() {
+    IntervalSet = setInterval(Timer,20);
 }
 
 function Timer() {
