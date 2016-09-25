@@ -156,9 +156,9 @@ function Replay()
     Delay = 1000;
     Firstcheck = false;
     
-    var o1 = document.getElementByClassName("gg");
-    var o2 = document.getElementByClassName("ggg");
-    var o3 = document.getElementByClassName("ggscore");
+    var o1 = document.getElementsByClassName("gg");
+    var o2 = document.getElementsByClassName("ggg");
+    var o3 = document.getElementsByClassName("ggscore");
     var o4 = document.getElementById("button2");
 
     o1.parentNode.removeChild(o1);
