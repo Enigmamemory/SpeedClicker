@@ -119,12 +119,14 @@ function GameOver() {
     head1.appendChild(text2);
 
     scoretext = score.toString();
-    
-    p2.id = "ggscore";
-    document.getElementById("ggscore").innerHTML = scoretext;
 
     document.body.appendChild(head1);
     document.body.appendChild(p1);
+    
+    p2.id = "ggscore";
+    document.getElementById("ggscore").innerHTML = score;
+
+
     document.body.appendChild(p2);
     
 }
@@ -152,8 +154,8 @@ function Timer() {
 
     choice = TimePass;
     changed = CircleChanged;
-    score = Score
-    wait = Delay
+    score = Score;
+    wait = Delay;
     document.getElementById("demo").innerHTML = choice;
     document.getElementById("demo2").innerHTML = changed;
     document.getElementById("demo3").innerHTML = score;
