@@ -105,8 +105,17 @@ function GameOver() {
     var p2 = document.createElement('p');
 
     head1.id = "gg";
+    var text1 = document.createTextNode("Game Over");
+    head1.appendChild(text1);
+    
     p1.id = "gg";
+    var text2 = document.createTextNode("Your Score is");
+    head1.appendChild(text2);
+
+    score = Score;
+    
     p2.id = "gg";
+    document.getElementById("ggscore").innerHTML = score
     
 }
 
