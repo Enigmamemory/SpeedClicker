@@ -120,7 +120,7 @@ function GameOver() {
     
     p1.className = "gg1";
     var text2 = document.createTextNode("Your Score is");
-    head1.appendChild(text2);
+    p1.appendChild(text2);
 
     scoretext = score.toString();
 
