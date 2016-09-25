@@ -42,7 +42,7 @@ function Timer() {
 	TimePass++;
 
     }
-    if((MilliPass >= 1000) && (First == false))
+    if((MilliPass >= 1000) && (Firstcheck == false))
     {
 	First();
     }
