@@ -95,7 +95,8 @@ function GameOver() {
     
     score = Score;
     
-    clearInterval(IntervalSet);
+    var div0 = document.getElementById("game-bg");
+
     var div1 = document.getElementById("circle_lv1_tl");
     var div2 = document.getElementById("circle_lv1_tr");
     var div3 = document.getElementById("circle_lv1_bl");
@@ -122,15 +123,16 @@ function GameOver() {
 
     scoretext = score.toString();
 
-    document.body.appendChild(head1);
-    document.body.appendChild(p1);
-    
-    document.body.appendChild(p2);
-    
+    div0.appendChild(head1);
+    div0.appendChild(p1);
+
     p2.id = "ggscore";
+    div0.appendChild(p2);
+    
+
     document.getElementById("ggscore").innerHTML = score;
 
-
+    clearInterval(IntervalSet);
     
 }
 
