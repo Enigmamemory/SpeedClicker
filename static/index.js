@@ -86,6 +86,7 @@ function Clickbr(){
 }
 
 function GameOver() {
+    clearInterval(IntervalSet);
     alert("Game Over");
 }
 
@@ -94,6 +95,10 @@ function Start() {
 }
 
 function Timer() {
+    if(MilliPass >= 3000)
+    {
+	GameOver();
+    }
     if(MilliPass % 1000 == 0)
     {
 	
