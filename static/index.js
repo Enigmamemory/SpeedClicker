@@ -28,6 +28,7 @@ function GameOver() {
 }
 
 function FirstRandom() {
+    alert("FirstRandom ran");
     var choice = Math.Floor(Math.Random()*4); /*creates int between 0-3, inclusive */
     if (choice == 0)
     {
@@ -59,6 +60,6 @@ function FirstRandom() {
     }
     else
     {
-	alert("Failed to produce int between 0-3") /*error message*/
+	alert("Failed to produce int between 0-3"); /*error message*/
     }
 }
