@@ -1,7 +1,7 @@
 var CircleChanged = false; /*tracks if circle color has been changed*/
 var TimePass = 0;
 var MilliPass = 0;
-var Score = 0;
+var ScoreNow = 0;
 var Delay = 1000;
 var Firstcheck = false
 var IntervalSet
@@ -50,7 +50,7 @@ function Clicktl(){
     {
 	check.style.backgroundColor = "#FFFFFF";
 	CircleChanged = false;
-	Score++;
+	ScoreNow++;
 	Delay = MilliPass;
     }
 }
@@ -62,7 +62,7 @@ function Clicktr(){
     {
 	check.style.backgroundColor = "#FFFFFF";
 	CircleChanged = false;
-	Score++;
+	ScoreNow++;
 	Delay = MilliPass;
     }
 }
@@ -74,7 +74,7 @@ function Clickbl(){
     {
 	check.style.backgroundColor = "#FFFFFF";
 	CircleChanged = false;
-	Score++;
+	ScoreNow++;
 	Delay = MilliPass;
     }
 }
@@ -86,14 +86,14 @@ function Clickbr(){
     {
 	check.style.backgroundColor = "#FFFFFF";
 	CircleChanged = false;
-	Score++;
+	ScoreNow++;
 	Delay = MilliPass;
     }
 }
 
 function GameOver() {
     
-    score = Score;
+    score = ScoreNow;
     
     var div0 = document.getElementById("game-bg");
 
