@@ -8,22 +8,22 @@ $(document).ready(function(){
     $("#button1").click(function(){
 	var div1 = document.createElement('div'); /*create div*/
 	div1.id = "circle_lv1_tl"; /*defines div's class*/
-	div1.color = "#FFFFFF"
+	div1.onclick = Clicktl();
 	document.body.appendChild(div1); /*adds div*/
 
 	var div2 = document.createElement('div'); /*create div*/
 	div2.id = "circle_lv1_tr"; /*defines div's class*/
-	div2.color = "#FFFFFF"
+	div2.onclick = Clicktr();
 	document.body.appendChild(div2); /*adds div*/
 
 	var div3 = document.createElement('div'); /*create div*/
 	div3.id = "circle_lv1_bl"; /*defines div's class*/
-	div3.color = "#FFFFFF"
+	div3.onclick = Clickbl();
 	document.body.appendChild(div3); /*adds div*/
 
 	var div4 = document.createElement('div'); /*create div*/
 	div4.id = "circle_lv1_br"; /*defines div's class*/
-	div4.color = "#FFFFFF"
+	div4.onclick = Clickbr();
 	document.body.appendChild(div4); /*adds div*/
 	
 	var element = document.getElementById("button1"); /*finds button*/
@@ -31,61 +31,53 @@ $(document).ready(function(){
     });
 });
 
-$(document).ready(function(){
-    $("#circle_lv1_tl").click(function(){
-	alert("1");
-	var check = document.getElementById("circle_lv1_tl");
-	checkcolor = check.style.backgroundColor;
-	document.getElementById("demo3").innerHTML = checkcolor;
-	if (checkcolor == "#0000FF")
-	{
-	    check.style.backgroundColor = "#FFFFFF";
-	    CircleChanged = false;
-	}
-    });
-});
+function Clicktl(){
+    alert("1");
+    var check = document.getElementById("circle_lv1_tl");
+    checkcolor = check.style.backgroundColor;
+    document.getElementById("demo3").innerHTML = checkcolor;
+    if (checkcolor == "#0000FF")
+    {
+	check.style.backgroundColor = "#FFFFFF";
+	CircleChanged = false;
+    }
+}
 
-$(document).ready(function(){
-    $("#circle_lv1_tr").click(function(){
-	alert("2");
-	var check = document.getElementById("circle_lv1_tr");
-	checkcolor = check.style.backgroundColor;
-	document.getElementById("demo3").innerHTML = checkcolor;
-	if (checkcolor == "#0000FF")
-	{
-	    check.style.backgroundColor = "#FFFFFF";
-	    CircleChanged = false;
-	}
-    });
-});
+function Clicktr(){
+    alert("2");
+    var check = document.getElementById("circle_lv1_tr");
+    checkcolor = check.style.backgroundColor;
+    document.getElementById("demo3").innerHTML = checkcolor;
+    if (checkcolor == "#0000FF")
+    {
+	check.style.backgroundColor = "#FFFFFF";
+	CircleChanged = false;
+    }
+}
 
-$(document).ready(function(){
-    $("#circle_lv1_bl").click(function(){
-	alert("3");
-	var check = document.getElementById("circle_lv1_bl");
-	checkcolor = check.style.backgroundColor;
-	document.getElementById("demo3").innerHTML = checkcolor;
-	if (checkcolor == "#0000FF")
-	{
-	    check.style.backgroundColor = "#FFFFFF";
-	    CircleChanged = false;
-	}
-    });
-});
+function Clickbl(){
+    alert("3");
+    var check = document.getElementById("circle_lv1_bl");
+    checkcolor = check.style.backgroundColor;
+    document.getElementById("demo3").innerHTML = checkcolor;
+    if (checkcolor == "#0000FF")
+    {
+	check.style.backgroundColor = "#FFFFFF";
+	CircleChanged = false;
+    }
+}
 
-$(document).ready(function(){
-    $("#circle_lv1_br").click(function(){
-	alert("4");
-	var check = document.getElementById("circle_lv1_br");
-	checkcolor = check.style.backgroundColor;
-	document.getElementById("demo3").innerHTML = checkcolor;
-	if (checkcolor == "#0000FF")
-	{
-	    check.style.backgroundColor = "#FFFFFF";
-	    CircleChanged = false;
-	}
-    });
-});		       
+function Clickbr(){
+    alert("4");
+    var check = document.getElementById("circle_lv1_br");
+    checkcolor = check.style.backgroundColor;
+    document.getElementById("demo3").innerHTML = checkcolor;
+    if (checkcolor == "#0000FF")
+    {
+	check.style.backgroundColor = "#FFFFFF";
+	CircleChanged = false;
+    }
+}
 
 function GameOver() {
     alert("Game Over");
