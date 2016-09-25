@@ -118,7 +118,7 @@ function GameOver() {
     var text1 = document.createTextNode("Game Over");
     head1.appendChild(text1);
     
-    p1.className = "gg1";
+    p1.className = "gg";
     var text2 = document.createTextNode("Your Score is");
     p1.appendChild(text2);
 
