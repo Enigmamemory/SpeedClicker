@@ -15,19 +15,19 @@ $(document).ready(function(){
 	var div2 = document.createElement('div'); /*create div*/
 	div2.id = "circle_lv1_tr"; /*defines div's class*/
 	div2.style.backgroundColor = "#FFFFFF";
-	/*div2.onclick = Clicktr;*/
+	div2.onclick = Clicktr;
 	document.body.appendChild(div2); /*adds div*/
 
 	var div3 = document.createElement('div'); /*create div*/
 	div3.id = "circle_lv1_bl"; /*defines div's class*/
 	div3.style.backgroundColor = "#FFFFFF";
-	/*div3.onclick = Clickbl;*/
+	div3.onclick = Clickbl;
 	document.body.appendChild(div3); /*adds div*/
 
 	var div4 = document.createElement('div'); /*create div*/
 	div4.id = "circle_lv1_br"; /*defines div's class*/
 	div4.style.backgroundColor = "#FFFFFF";
-	/*div4.onclick = Clickbr;*/
+	div4.onclick = Clickbr;
 	document.body.appendChild(div4); /*adds div*/
 	
 	var element = document.getElementById("button1"); /*finds button*/
