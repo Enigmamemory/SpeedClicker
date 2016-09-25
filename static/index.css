@@ -458,17 +458,17 @@ img.bg {
     top: 5%;
 }
 
-h1.gg{
+#gg{
     position: absolute;
     top: 25%;
 }
 
-p.ggg{
+#ggg{
     position: absolute;
     top: 45%;
 }
 
-p.ggscore{
+#ggscore{
     position: absolute;
     top: 55%;
 }

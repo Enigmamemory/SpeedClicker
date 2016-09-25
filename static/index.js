@@ -156,15 +156,15 @@ function Replay()
     Delay = 1000;
     Firstcheck = false;
     
-    var o1 = document.getElementsByClassName("gg");
-    var o2 = document.getElementsByClassName("ggg");
-    var o3 = document.getElementsByClassName("ggscore");
-    var o4 = document.getElementById("button2");
+    var n1 = document.getElementById("gg");
+    var n2 = document.getElementById("ggg");
+    var n3 = document.getElementById("ggscore");
+    var n4 = document.getElementById("button2");
 
-    o1.parentNode.removeChild(o1);
-    o2.parentNode.removeChild(o2);
-    o3.parentNode.removeChild(o3);
-    o4.parentNOde.removeChild(o4);
+    n1.parentNode.removeChild(n1);
+    n2.parentNode.removeChild(n2);
+    n3.parentNode.removeChild(n3);
+    n4.parentNOde.removeChild(n4);
 	
 	
     var div0 = document.getElementById("game-bg");
@@ -602,17 +602,17 @@ function GameOver() {
     var p2 = document.createElement('p');
     var breaking = document.createElement("br");
 
-    head1.className = "gg";
+    head1.id = "gg";
     var text1 = document.createTextNode("Game Over");
     head1.appendChild(text1);
     
-    p1.className = "ggg";
+    p1.id = "ggg";
     var text2 = document.createTextNode("Your Score is");
     p1.appendChild(text2);
 
     scoretext = score.toString();
 
-    p2.className = "ggscore";
+    p2.id = "ggscore";
     var text3 = document.createTextNode(scoretext);
     p2.appendChild(text3);
 
