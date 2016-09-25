@@ -38,48 +38,44 @@ $(document).ready(function(){
 function Clicktl(){
     var check = document.getElementById("circle_lv1_tl");
     checkcolor = check.style.backgroundColor;
-    document.getElementById("demo3").innerHTML = checkcolor;
     if (checkcolor == 'rgb(0, 0, 255)')
     {
-	alert("1");
 	check.style.backgroundColor = "#FFFFFF";
 	CircleChanged = false;
+	Score++;
     }
 }
 
 function Clicktr(){
     var check = document.getElementById("circle_lv1_tr");
     checkcolor = check.style.backgroundColor;
-    document.getElementById("demo3").innerHTML = checkcolor;
     if (checkcolor == 'rgb(0, 0, 255)')
     {
-	alert("2");
 	check.style.backgroundColor = "#FFFFFF";
 	CircleChanged = false;
+	Score++;
     }
 }
 
 function Clickbl(){
     var check = document.getElementById("circle_lv1_bl");
     checkcolor = check.style.backgroundColor;
-    document.getElementById("demo3").innerHTML = checkcolor;
     if (checkcolor == 'rgb(0, 0, 255)')
     {
-	alert("3");
 	check.style.backgroundColor = "#FFFFFF";
 	CircleChanged = false;
+	Score++;
     }
 }
 
 function Clickbr(){
     var check = document.getElementById("circle_lv1_br");
     checkcolor = check.style.backgroundColor;
-    document.getElementById("demo3").innerHTML = checkcolor;
     if (checkcolor == 'rgb(0, 0, 255)')
     {
-	alert("4");
 	check.style.backgroundColor = "#FFFFFF";
 	CircleChanged = false;
+	Score++;
     }
 }
 
@@ -94,6 +90,7 @@ function Timer() {
 	TimePass++;
 
     }
+    
     if((MilliPass >= 1000) && (Firstcheck == false))
     {
 	First();
@@ -101,10 +98,19 @@ function Timer() {
 
     choice = TimePass;
     changed = CircleChanged;
+    score = Score
     document.getElementById("demo").innerHTML = choice;
     document.getElementById("demo2").innerHTML = changed;
+    document.getElementById("demo3").innerHTML = score;
     MilliPass = MilliPass + 20;
-    
+
+    if((MilliPass >= 1000) && (Firstcheck == true))
+    {
+	if(CircleChanged == false)
+	{
+	    First();
+	}
+    }
 }
     
 function First() {
