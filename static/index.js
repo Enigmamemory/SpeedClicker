@@ -486,7 +486,7 @@ function Timer() {
 
     if(score > highscore)
     {
-	score = HighScore;
+	HighScore = score;
     }
     
     if(MilliPass >= 30000)
