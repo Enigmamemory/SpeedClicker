@@ -41,8 +41,8 @@ img.bg {
     position: absolute;
     border-radius: 50%;
     width: 10%;
-    top: 35%;
-    left: 35%;
+    top: 30%;
+    left: 30%;
     background: #FFFFFF;
     
 }
@@ -60,8 +60,8 @@ img.bg {
     position: absolute;
     border-radius: 50%;
     width: 10%;
-    top: 35%;
-    left: 65%;
+    top: 30%;
+    left: 60%;
     background: #FFFFFF;
 
 }
@@ -79,8 +79,8 @@ img.bg {
     position: absolute;
     border-radius: 50%;
     width: 10%;
-    top: 65%;
-    left: 35%;
+    top: 60%;
+    left: 30%;
     background: #FFFFFF;
 
 }
@@ -98,8 +98,8 @@ img.bg {
     position: absolute;
     border-radius: 50%;
     width: 10%;
-    top: 65%;
-    left: 65%;
+    top: 60%;
+    left: 60%;
     background: #FFFFFF;
     
 }
