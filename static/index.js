@@ -118,13 +118,13 @@ $(document).ready(function(){
 	div18.onclick = Click32;
 	div0.appendChild(div18); /*adds div*/
 
-	var div9 = document.createElement('div'); /*create div*/
+	var div19 = document.createElement('div'); /*create div*/
 	div19.id = "circle_33"; /*defines div's class*/
 	div19.style.backgroundColor = "#FFFFFF";
 	div19.onclick = Click33;
 	div0.appendChild(div19); /*adds div*/
 
-	var div10 = document.createElement('div'); /*create div*/
+	var div20 = document.createElement('div'); /*create div*/
 	div20.id = "circle_34"; /*defines div's class*/
 	div20.style.backgroundColor = "#FFFFFF";
 	div20.onclick = Click34;
