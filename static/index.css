@@ -76,18 +76,18 @@ img.bg {
 
 }
 
-#circle_lv1_tl{
+#circle_00{
 
     position: absolute;
     border-radius: 50%;
-    width: 10%;
-    top: 25%;
-    left: 35%;
+    width: 5%;
+    top: 15%;
+    left: 15%;
     background: #FFFFFF
     
 }
 
-#circle_lv1_tl:after{
+#circle_00:after{
 
     content: "";
     display: block;
@@ -95,18 +95,18 @@ img.bg {
     
 }
 
-#circle_lv1_tr{
+#circle_01{
 
     position: absolute;
     border-radius: 50%;
-    width: 10%;
-    top: 25%;
-    left: 55%;
+    width: 5%;
+    top: 15%;
+    left: 30%;
     background: #FFFFFF
 
 }
 
-#circle_lv1_tr:after{
+#circle_01:after{
 
     content: "";
     display: block;
@@ -114,18 +114,18 @@ img.bg {
     
 }
 
-#circle_lv1_bl{
+#circle_02{
 
     position: absolute;
     border-radius: 50%;
-    width: 10%;
-    bottom: 25%;
-    left: 35%;
+    width: 5%;
+    top: 15%;
+    left: 45%;
     background: #FFFFFF
 
 }
 
-#circle_lv1_bl:after{
+#circle_02:after{
 
     content: "";
     display: block;
@@ -133,18 +133,18 @@ img.bg {
     
 }
 
-#circle_lv1_br{
+#circle_03{
 
     position: absolute;
     border-radius: 50%;
-    width: 10%;
-    bottom: 25%;
-    left: 55%;
+    width: 5%;
+    top: 15%;
+    left: 60%;
     background: #FFFFFF
     
 }
 
-#circle_lv1_br:after{
+#circle_03:after{
 
     content: "";
     display: block;
@@ -154,8 +154,8 @@ img.bg {
 
 #demo3{
     position: absolute;
-    left: 90%;
-    top: 15%;
+    left: 95%;
+    top: 5%;
 }
 
 h1.gg{

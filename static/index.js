@@ -11,27 +11,27 @@ $(document).ready(function(){
 	var div0 = document.getElementById("game-bg");
 	
 	var div1 = document.createElement('div'); /*create div*/
-	div1.id = "circle_lv1_tl"; /*defines div's class*/
+	div1.id = "circle_00"; /*defines div's class*/
 	div1.style.backgroundColor = "#FFFFFF";
-	div1.onclick = Clicktl;
+	div1.onclick = Click00;
 	div0.appendChild(div1); /*adds div*/
 
 	var div2 = document.createElement('div'); /*create div*/
-	div2.id = "circle_lv1_tr"; /*defines div's class*/
+	div2.id = "circle_01"; /*defines div's class*/
 	div2.style.backgroundColor = "#FFFFFF";
-	div2.onclick = Clicktr;
+	div2.onclick = Click01;
 	div0.appendChild(div2); /*adds div*/
 
 	var div3 = document.createElement('div'); /*create div*/
-	div3.id = "circle_lv1_bl"; /*defines div's class*/
+	div3.id = "circle_02"; /*defines div's class*/
 	div3.style.backgroundColor = "#FFFFFF";
-	div3.onclick = Clickbl;
+	div3.onclick = Click02;
 	div0.appendChild(div3); /*adds div*/
 
 	var div4 = document.createElement('div'); /*create div*/
-	div4.id = "circle_lv1_br"; /*defines div's class*/
+	div4.id = "circle_03"; /*defines div's class*/
 	div4.style.backgroundColor = "#FFFFFF";
-	div4.onclick = Clickbr;
+	div4.onclick = Click03;
 	div0.appendChild(div4); /*adds div*/
 
 	var p1 = document.createElement('p');
@@ -43,8 +43,8 @@ $(document).ready(function(){
     });
 });
 
-function Clicktl(){
-    var check = document.getElementById("circle_lv1_tl");
+function Click00(){
+    var check = document.getElementById("circle_00");
     checkcolor = check.style.backgroundColor;
     if (checkcolor == 'rgb(0, 0, 255)')
     {
@@ -55,8 +55,8 @@ function Clicktl(){
     }
 }
 
-function Clicktr(){
-    var check = document.getElementById("circle_lv1_tr");
+function Click01(){
+    var check = document.getElementById("circle_01");
     checkcolor = check.style.backgroundColor;
     if (checkcolor == 'rgb(0, 0, 255)')
     {
@@ -67,8 +67,8 @@ function Clicktr(){
     }
 }
 
-function Clickbl(){
-    var check = document.getElementById("circle_lv1_bl");
+function Click02(){
+    var check = document.getElementById("circle_02");
     checkcolor = check.style.backgroundColor;
     if (checkcolor == 'rgb(0, 0, 255)')
     {
@@ -79,8 +79,8 @@ function Clickbl(){
     }
 }
 
-function Clickbr(){
-    var check = document.getElementById("circle_lv1_br");
+function Click03(){
+    var check = document.getElementById("circle_03");
     checkcolor = check.style.backgroundColor;
     if (checkcolor == 'rgb(0, 0, 255)')
     {
@@ -97,10 +97,10 @@ function GameOver() {
     
     var div0 = document.getElementById("game-bg");
 
-    var div1 = document.getElementById("circle_lv1_tl");
-    var div2 = document.getElementById("circle_lv1_tr");
-    var div3 = document.getElementById("circle_lv1_bl");
-    var div4 = document.getElementById("circle_lv1_br");
+    var div1 = document.getElementById("circle_00");
+    var div2 = document.getElementById("circle_01");
+    var div3 = document.getElementById("circle_02");
+    var div4 = document.getElementById("circle_03");
     div1.parentNode.removeChild(div1);
     div2.parentNode.removeChild(div2);
     div3.parentNode.removeChild(div3);
@@ -178,25 +178,25 @@ function First() {
     var choice = Math.floor(Math.random()*4); /*creates int between 0-3, inclusive */
     if (choice == 0)
     {
-	var check = document.getElementById("circle_lv1_tl");
+	var check = document.getElementById("circle_00");
 	check.style.backgroundColor = "#0000FF";
 	CircleChanged = true;
     }
     else if (choice == 1)
     {
-	var check = document.getElementById("circle_lv1_tr");
+	var check = document.getElementById("circle_01");
 	check.style.backgroundColor = "#0000FF";
 	CircleChanged = true;
     }
     else if (choice == 2)
     {
-	var check = document.getElementById("circle_lv1_bl");
+	var check = document.getElementById("circle_02");
 	check.style.backgroundColor = "#0000FF";
 	CircleChanged = true;
     }
     else if (choice == 3)
     {
-	var check = document.getElementById("circle_lv1_br");
+	var check = document.getElementById("circle_03");
 	check.style.backgroundColor = "#0000FF";
 	CircleChanged = true;
     }
