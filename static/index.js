@@ -123,11 +123,12 @@ function GameOver() {
     document.body.appendChild(head1);
     document.body.appendChild(p1);
     
+    document.body.appendChild(p2);
+    
     p2.id = "ggscore";
     document.getElementById("ggscore").innerHTML = score;
 
 
-    document.body.appendChild(p2);
     
 }
 
