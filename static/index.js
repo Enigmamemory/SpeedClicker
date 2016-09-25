@@ -91,7 +91,23 @@ function Clickbr(){
 
 function GameOver() {
     clearInterval(IntervalSet);
-    alert("Game Over");
+    var div1 = document.getElementById("circle_lv1_tl");
+    var div2 = document.getElementById("circle_lv1_tr");
+    var div3 = document.getElementById("circle_lv1_bl");
+    var div4 = document.getElementById("circle_lv1_br");
+    div1.parentNode.removeChild(div1);
+    div2.parentNode.removeChild(div2);
+    div3.parentNode.removeChild(div3);
+    div4.parentNode.removeChild(div4);
+    
+    var head1 = document.createElement('h1');
+    var p1 = document.createElement('p');
+    var p2 = document.createElement('p');
+
+    head1.id = "gg";
+    p1.id = "gg";
+    p2.id = "gg";
+    
 }
 
 function Start() {

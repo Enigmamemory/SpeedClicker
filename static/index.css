@@ -157,3 +157,8 @@ img.bg {
     left: 90%;
     top: 15%;
 }
+
+#gg{
+    position: absolute;
+    text-align: center;
+}
