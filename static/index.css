@@ -83,7 +83,7 @@ img.bg {
     width: 10%;
     top: 25%;
     left: 35%;
-    backgroundColor: #FFFFFF
+    background: #FFFFFF
     
 }
 
@@ -102,7 +102,7 @@ img.bg {
     width: 10%;
     top: 25%;
     left: 55%;
-    backgroundColor: #FFFFFF
+    background: #FFFFFF
 
 }
 
@@ -121,7 +121,7 @@ img.bg {
     width: 10%;
     bottom: 25%;
     left: 35%;
-    backgroundColor: #FFFFFF
+    background: #FFFFFF
 
 }
 
@@ -140,7 +140,7 @@ img.bg {
     width: 10%;
     bottom: 25%;
     left: 55%;
-    backgroundColor: #FFFFFF
+    background: #FFFFFF
     
 }
 
