@@ -619,7 +619,7 @@ function GameOver() {
     var button2 = document.createElement("button");
     button2.id = "button2";
     button2.className = "myButton";
-    button2.onClick = Replay;
+    button2.onclick = Replay;
     var text4 = document.createTextNode("Play Again?");
     button2.appendChild(text4);
     
