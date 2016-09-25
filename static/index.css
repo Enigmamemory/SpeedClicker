@@ -22,7 +22,7 @@ img.bg {
   }
 }
 
-#game-bg {
+#game-bg { /* Background of game, scales with window */
 
     position: relative;
     width: 80%;
@@ -36,3 +36,46 @@ img.bg {
 
 }
 
+#circle_lv1_tl{
+
+    position: absolute;
+    border-radius: 50%;
+    width: 20%;
+    height: 20%;
+    top: 35%;
+    left: 35%;
+    
+}
+
+#circle_lv1_tr{
+
+    position: absolute;
+    border-radius: 50%;
+    width: 20%;
+    height: 20%;
+    top: 35%;
+    left: 65%;
+
+}
+
+#circle_lv1_bl{
+
+    position: absolute;
+    border-radius: 50%;
+    width: 20%;
+    height: 20%;
+    top: 65%;
+    left: 35%;
+
+}
+
+#circle_lv1_br{
+
+    position: absolute;
+    border-radius: 50%;
+    width: 20%;
+    height: 20%;
+    top: 65%;
+    left: 65%;
+    
+}
