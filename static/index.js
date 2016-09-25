@@ -99,6 +99,9 @@ function GameOver() {
     div2.parentNode.removeChild(div2);
     div3.parentNode.removeChild(div3);
     div4.parentNode.removeChild(div4);
+
+    var p0 = document.getElementById("demo3");
+    p0.parentNode.removeChild(p0);
     
     var head1 = document.createElement('h1');
     var p1 = document.createElement('p');
@@ -116,6 +119,10 @@ function GameOver() {
     
     p2.id = "gg";
     document.getElementById("ggscore").innerHTML = score
+
+    document.body.appendChild(head1);
+    document.body.appendChild(p1);
+    document.body.appendChild(p2);
     
 }
 
