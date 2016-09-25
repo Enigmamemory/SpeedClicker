@@ -28,7 +28,7 @@ function GameOver() {
 }
 
 function FirstRandom() {
-    var choice = Math.Floor(Math.Random()*4); /*creates int between 0-3, inclusive */
+    var choice = Math.Floor(Math.random()*4); /*creates int between 0-3, inclusive */
     document.getElementById("demo").innerHTML = choice;
     if (choice == 0)
     {
