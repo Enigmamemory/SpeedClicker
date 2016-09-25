@@ -34,24 +34,28 @@ function FirstRandom() {
 	var check = document.getElementById("circle_lv1_tl");
 	check.setAttribute("background","#0000FF");
 	CircleChanged = true;
+	alert("0");
     }
     else if (choice == 1)
     {
 	var check = document.getElementById("circle_lv1_tr");
 	check.setAttribute("background","#0000FF");
 	CircleChanged = true;
+	alert("1");
     }
     else if (choice == 2)
     {
 	var check = document.getElementById("circle_lv1_bl");
 	check.setAttribute("background","#0000FF");
 	CircleChanged = true;
+	alert("2");
     }
     else if (choice == 3)
     {
 	var check = document.getElementById("circle_lv1_br");
 	check.setAttribute("background","#0000FF");
 	CircleChanged = true;
+	aler("3");
     }
     else
     {
