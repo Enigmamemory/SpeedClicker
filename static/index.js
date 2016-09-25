@@ -1,3 +1,5 @@
+var CircleChanged = false /*tracks if circle color has been changed*/
+
 $(document).ready(function(){
     $("#button1").click(function(){
 	var div1 = document.createElement('div'); /*create div*/
@@ -23,4 +25,36 @@ $(document).ready(function(){
 
 function GameOver() {
     alert("Game Over");
+}
+
+function FirstRandom() {
+    var choice = Math.Floor(Math.Random()*4); /*creates int between 0-3, inclusive */
+    if (choice == 0)
+    {
+	var check = document.getElementById("circle_lv1_tl");
+	check.setAttribute("background","#0000FF");
+	CircleChanged = true;
+    }
+    else if (choice == 1)
+    {
+	var check = document.getElementById("circle_lv1_tr");
+	check.setAttribute("background","#0000FF");
+	CircleChanged = true;
+    }
+    else if (choice == 2)
+    {
+	var check = document.getElementById("circle_lv1_bl");
+	check.setAttribute("background","#0000FF");
+	CircleChanged = true;
+    }
+    else if (choice == 3)
+    {
+	var check = document.getElementById("circle_lv1_br");
+	check.setAttribute("background","#0000FF");
+	CircleChanged = true;
+    }
+    else
+    {
+	alert("Failed to produce int between 0-3") /*error message*/
+    }
 }
