@@ -20,3 +20,7 @@ $(document).ready(function(){
 	element.parentNode.removeChild(element); /*removes button*/
     });
 });
+
+function GameOver() {
+    alert("Game Over");
+}
