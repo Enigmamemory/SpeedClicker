@@ -164,7 +164,7 @@ function Replay()
     n1.parentNode.removeChild(n1);
     n2.parentNode.removeChild(n2);
     n3.parentNode.removeChild(n3);
-    n4.parentNOde.removeChild(n4);
+    n4.parentNode.removeChild(n4);
 	
 	
     var div0 = document.getElementById("game-bg");
@@ -299,6 +299,8 @@ function Replay()
     var p3 = document.createElement('p');
     p3.id = "timegone";
     div0.appendChild(p3);
+
+    Start()
 
 }
 
