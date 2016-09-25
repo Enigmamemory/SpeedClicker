@@ -3,7 +3,7 @@ var TimePass = 0;
 var MilliPass = 0;
 var ScoreNow = 0;
 var Delay = 1000;
-var Firstcheck = false
+var Firstcheck = false;
 var IntervalSet
 var HighScore = 0;
 
@@ -144,6 +144,163 @@ $(document).ready(function(){
 	
 	var element = document.getElementById("button1"); /*finds button*/
 	element.parentNode.removeChild(element); /*removes button*/
+    });
+});
+
+$(document).ready(function(){
+    $("#button2").click(function(){
+
+	CircleChanged = false;
+	TimePass = 0;
+	MilliPass = 0;
+	ScoreNow = 0;
+	Delay = 1000;
+	Firstcheck = false;
+
+	var o1 = document.getElementByClassName("gg");
+	var o2 = document.getElementByClassName("ggg");
+	var o3 = document.getElementByClassName("ggscore");
+	var o4 = document.getElementById("button2");
+
+	o1.parentNode.removeChild(o1);
+	o2.parentNode.removeChild(o2);
+	o3.parentNode.removeChild(o3);
+	o4.parentNOde.removeChild(o4);
+	
+	
+	var div0 = document.getElementById("game-bg");
+	
+	var div1 = document.createElement('div'); /*create div*/
+	div1.id = "circle_00"; /*defines div's class*/
+	div1.style.backgroundColor = "#FFFFFF";
+	div1.onclick = Click00;
+	div0.appendChild(div1); /*adds div*/
+
+	var div2 = document.createElement('div'); /*create div*/
+	div2.id = "circle_01"; /*defines div's class*/
+	div2.style.backgroundColor = "#FFFFFF";
+	div2.onclick = Click01;
+	div0.appendChild(div2); /*adds div*/
+
+	var div3 = document.createElement('div'); /*create div*/
+	div3.id = "circle_02"; /*defines div's class*/
+	div3.style.backgroundColor = "#FFFFFF";
+	div3.onclick = Click02;
+	div0.appendChild(div3); /*adds div*/
+
+	var div4 = document.createElement('div'); /*create div*/
+	div4.id = "circle_03"; /*defines div's class*/
+	div4.style.backgroundColor = "#FFFFFF";
+	div4.onclick = Click03;
+	div0.appendChild(div4); /*adds div*/
+
+	var div5 = document.createElement('div'); /*create div*/
+	div5.id = "circle_04"; /*defines div's class*/
+	div5.style.backgroundColor = "#FFFFFF";
+	div5.onclick = Click04;
+	div0.appendChild(div5); /*adds div*/
+
+	var div6 = document.createElement('div'); /*create div*/
+	div6.id = "circle_10"; /*defines div's class*/
+	div6.style.backgroundColor = "#FFFFFF";
+	div6.onclick = Click10;
+	div0.appendChild(div6); /*adds div*/
+
+	var div7 = document.createElement('div'); /*create div*/
+	div7.id = "circle_11"; /*defines div's class*/
+	div7.style.backgroundColor = "#FFFFFF";
+	div7.onclick = Click11;
+	div0.appendChild(div7); /*adds div*/
+
+	var div8 = document.createElement('div'); /*create div*/
+	div8.id = "circle_12"; /*defines div's class*/
+	div8.style.backgroundColor = "#FFFFFF";
+	div8.onclick = Click12;
+	div0.appendChild(div8); /*adds div*/
+
+	var div9 = document.createElement('div'); /*create div*/
+	div9.id = "circle_13"; /*defines div's class*/
+	div9.style.backgroundColor = "#FFFFFF";
+	div9.onclick = Click13;
+	div0.appendChild(div9); /*adds div*/
+
+	var div10 = document.createElement('div'); /*create div*/
+	div10.id = "circle_14"; /*defines div's class*/
+	div10.style.backgroundColor = "#FFFFFF";
+	div10.onclick = Click14;
+	div0.appendChild(div10); /*adds div*/
+
+	var div11 = document.createElement('div'); /*create div*/
+	div11.id = "circle_20"; /*defines div's class*/
+	div11.style.backgroundColor = "#FFFFFF";
+	div11.onclick = Click20;
+	div0.appendChild(div11); /*adds div*/
+
+	var div12 = document.createElement('div'); /*create div*/
+	div12.id = "circle_21"; /*defines div's class*/
+	div12.style.backgroundColor = "#FFFFFF";
+	div12.onclick = Click21;
+	div0.appendChild(div12); /*adds div*/
+
+	var div13 = document.createElement('div'); /*create div*/
+	div13.id = "circle_22"; /*defines div's class*/
+	div13.style.backgroundColor = "#FFFFFF";
+	div13.onclick = Click22;
+	div0.appendChild(div13); /*adds div*/
+
+	var div14 = document.createElement('div'); /*create div*/
+	div14.id = "circle_23"; /*defines div's class*/
+	div14.style.backgroundColor = "#FFFFFF";
+	div14.onclick = Click23;
+	div0.appendChild(div14); /*adds div*/
+
+	var div15 = document.createElement('div'); /*create div*/
+	div15.id = "circle_24"; /*defines div's class*/
+	div15.style.backgroundColor = "#FFFFFF";
+	div15.onclick = Click24;
+	div0.appendChild(div15); /*adds div*/
+
+	var div16 = document.createElement('div'); /*create div*/
+	div16.id = "circle_30"; /*defines div's class*/
+	div16.style.backgroundColor = "#FFFFFF";
+	div16.onclick = Click30;
+	div0.appendChild(div16); /*adds div*/
+
+	var div17 = document.createElement('div'); /*create div*/
+	div17.id = "circle_31"; /*defines div's class*/
+	div17.style.backgroundColor = "#FFFFFF";
+	div17.onclick = Click31;
+	div0.appendChild(div17); /*adds div*/
+
+	var div18 = document.createElement('div'); /*create div*/
+	div18.id = "circle_32"; /*defines div's class*/
+	div18.style.backgroundColor = "#FFFFFF";
+	div18.onclick = Click32;
+	div0.appendChild(div18); /*adds div*/
+
+	var div19 = document.createElement('div'); /*create div*/
+	div19.id = "circle_33"; /*defines div's class*/
+	div19.style.backgroundColor = "#FFFFFF";
+	div19.onclick = Click33;
+	div0.appendChild(div19); /*adds div*/
+
+	var div20 = document.createElement('div'); /*create div*/
+	div20.id = "circle_34"; /*defines div's class*/
+	div20.style.backgroundColor = "#FFFFFF";
+	div20.onclick = Click34;
+	div0.appendChild(div20); /*adds div*/
+
+
+	var p1 = document.createElement('p');
+	p1.id = "demo3";
+	div0.appendChild(p1);
+	var p2 = document.createElement('p');
+	p2.id = "highscore";
+	div0.appendChild(p2);
+	var p3 = document.createElement('p');
+	p3.id = "timegone";
+	div0.appendChild(p3);
+	
     });
 });
 
@@ -451,7 +608,7 @@ function GameOver() {
     var text1 = document.createTextNode("Game Over");
     head1.appendChild(text1);
     
-    p1.className = "gg";
+    p1.className = "ggg";
     var text2 = document.createTextNode("Your Score is");
     p1.appendChild(text2);
 
@@ -464,6 +621,8 @@ function GameOver() {
     var button2 = document.createElement("button");
     button2.id = "button2";
     button2.className = "myButton";
+    document.getElementById("button2").innerHTML = "Play Again";
+    
 
     div0.appendChild(head1);
     div0.appendChild(p1);
