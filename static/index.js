@@ -33,6 +33,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $("#circle_lv1_tl").click(function(){
+	alert("1");
 	var check = document.getElementById("circle_lv1_tl");
 	checkcolor = check.style.backgroundColor;
 	document.getElementById("demo3").innerHTML = checkcolor;
@@ -46,6 +47,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $("#circle_lv1_tr").click(function(){
+	alert("2");
 	var check = document.getElementById("circle_lv1_tr");
 	checkcolor = check.style.backgroundColor;
 	document.getElementById("demo3").innerHTML = checkcolor;
@@ -59,6 +61,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $("#circle_lv1_bl").click(function(){
+	alert("3");
 	var check = document.getElementById("circle_lv1_bl");
 	checkcolor = check.style.backgroundColor;
 	document.getElementById("demo3").innerHTML = checkcolor;
@@ -72,6 +75,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $("#circle_lv1_br").click(function(){
+	alert("4");
 	var check = document.getElementById("circle_lv1_br");
 	checkcolor = check.style.backgroundColor;
 	document.getElementById("demo3").innerHTML = checkcolor;
