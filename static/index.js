@@ -1,6 +1,7 @@
 var CircleChanged = false; /*tracks if circle color has been changed*/
 var TimePass = 0;
 var MilliPass = 0;
+var Score = 0;
 
 $(document).ready(function(){
     $("#button1").click(function(){
@@ -40,15 +41,20 @@ function Timer() {
 	TimePass++;
 
     }
+    if(MilliPass >= 1000)
+    {
+	First();
+    }
 
     choice = TimePass;
+    changed = CircleChanged;
     document.getElementById("demo").innerHTML = choice;
+    document.getElementById("demo2").innerHTML = changed;
     MilliPass = MilliPass + 20;
     
 }
     
-function FirstRandom() {
-    setTimeout(GameOver,3000);
+function First() {
     var choice = Math.floor(Math.random()*4); /*creates int between 0-3, inclusive */
     if (choice == 0)
     {
