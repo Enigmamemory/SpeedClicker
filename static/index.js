@@ -35,6 +35,7 @@ $(document).ready(function(){
     $("#circle_lv1_tl").click(function(){
 	var check = document.getElementById("circle_lv1_tl");
 	checkcolor = check.getAttribute("background-color");
+	document.getElementById("demo3").innerHTML = checkcolor;
 	if (checkcolor == "#0000FF")
 	{
 	    check.style.backgroundColor("#FFFFFF");
@@ -47,6 +48,7 @@ $(document).ready(function(){
     $("#circle_lv1_tr").click(function(){
 	var check = document.getElementById("circle_lv1_tr");
 	checkcolor = check.getAttribute("background-color");
+	document.getElementById("demo3").innerHTML = checkcolor;
 	if (checkcolor == "#0000FF")
 	{
 	    check.style.backgroundColor("#FFFFFF");
@@ -59,6 +61,7 @@ $(document).ready(function(){
     $("#circle_lv1_bl").click(function(){
 	var check = document.getElementById("circle_lv1_bl");
 	checkcolor = check.getAttribute("background-color");
+	document.getElementById("demo3").innerHTML = checkcolor;
 	if (checkcolor == "#0000FF")
 	{
 	    check.style.backgroundColor("#FFFFFF");
@@ -71,6 +74,7 @@ $(document).ready(function(){
     $("#circle_lv1_br").click(function(){
 	var check = document.getElementById("circle_lv1_br");
 	checkcolor = check.getAttribute("background-color");
+	document.getElementById("demo3").innerHTML = checkcolor;
 	if (checkcolor == "#0000FF")
 	{
 	    check.style.backgroundColor("#FFFFFF");
