@@ -2,7 +2,7 @@ var CircleChanged = false; /*tracks if circle color has been changed*/
 var TimePass = 0;
 var MilliPass = 0;
 var Score = 0;
-var First = false
+var Firstcheck = false
 
 $(document).ready(function(){
     $("#button1").click(function(){
@@ -85,5 +85,5 @@ function First() {
     {
 	alert("Failed to produce int between 0-3"); /*error message*/
     }
-    First = true;
+    Firstcheck = true;
 }
