@@ -13,9 +13,11 @@
 <body>
   <img src="static/sunny_day.jpg" class="bg"></img>
 
+  <p id="demo"></p>
+
   <div id="game-bg">
 
-    <button onclick="setTimeout(FirstRandom, 1000);setTimeout(GameOver,3000)" class="myButton" id="button1">Play</button> <!-- do not call GameOver(), leave () out -->
+    <button onclick="setInterval(Timer, 20)" class="myButton" id="button1">Play</button> <!-- do not call GameOver(), leave () out -->
   </div>
   
 </body>
