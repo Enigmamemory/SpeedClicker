@@ -33,34 +33,29 @@ function GameOver() {
 
 function FirstRandom() {
     var choice = Math.floor(Math.random()*4); /*creates int between 0-3, inclusive */
-    document.getElementById("demo").innerHTML = choice;
     if (choice == 0)
     {
 	var check = document.getElementById("circle_lv1_tl");
 	check.style.backgroundColor = "#0000FF";
 	CircleChanged = true;
-	alert("0");
     }
     else if (choice == 1)
     {
 	var check = document.getElementById("circle_lv1_tr");
 	check.style.backgroundColor = "#0000FF";
 	CircleChanged = true;
-	alert("1");
     }
     else if (choice == 2)
     {
 	var check = document.getElementById("circle_lv1_bl");
 	check.style.backgroundColor = "#0000FF";
 	CircleChanged = true;
-	alert("2");
     }
     else if (choice == 3)
     {
 	var check = document.getElementById("circle_lv1_br");
 	check.style.backgroundColor = "#0000FF";
 	CircleChanged = true;
-	aler("3");
     }
     else
     {
