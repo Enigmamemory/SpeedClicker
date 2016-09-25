@@ -28,8 +28,8 @@ function GameOver() {
 }
 
 function FirstRandom() {
-    alert("FirstRandom ran");
     var choice = Math.Floor(Math.Random()*4); /*creates int between 0-3, inclusive */
+    alert(choice);
     if (choice == 0)
     {
 	var check = document.getElementById("circle_lv1_tl");
