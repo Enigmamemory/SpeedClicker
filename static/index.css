@@ -66,6 +66,14 @@ img.bg {
 
 }
 
+#circle_lv1_tr:after{
+
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+    
+}
+
 #circle_lv1_bl{
 
     position: absolute;
@@ -77,6 +85,14 @@ img.bg {
 
 }
 
+#circle_lv1_bl:after{
+
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+    
+}
+
 #circle_lv1_br{
 
     position: absolute;
@@ -85,5 +101,13 @@ img.bg {
     top: 65%;
     left: 65%;
     background: #FFFFFF;
+    
+}
+
+#circle_lv1_br:after{
+
+    content: "";
+    display: block;
+    padding-bottom: 100%;
     
 }
